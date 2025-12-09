@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Conoce más sobre nuestro equipo y misión."/>
+  <title>Sobre Nosotros - Proyecto Web</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet/less" type="text/css" href="assets/css/styles.less" />
+</head>
+<body>
+  <header class="main-header" id="main-header">
+  </header>
+  <section class="sobre_nosotros">
+    <h1>Sobre Nosotros</h1>
+  </section>
+  <main class="contenido">
+    <section class="seccion info">
+  <h2>Nuestra Historia</h2>
+  <div class="contenido-flex">
+    <p>
+      Huellas de Amor nace del profundo compromiso por dar una segunda oportunidad a animales abandonados y maltratados. 
+      Iniciamos como un pequeño refugio comunitario y hoy somos una red de voluntarios que trabaja incansablemente por el rescate, rehabilitación y adopción responsable.
+    </p>
+    <a href="adopciones.html" class="btn-adoptar">Conoce a nuestros rescatados</a>
+    <img src="assets/img/equipo.jpg" alt="Voluntarios de Huellas de Amor" class="img-rounded">
+  </div>
+</section>
+
+<section class="seccion info">
+  <h2>Misión y Visión</h2>
+  <div class="contenido-flex reverse">
+    <img src="assets/img/mision.jpg" alt="Imagen que representa la misión" class="img-rounded">
+    <div>
+      <p><strong>Misión:</strong> Rescatar animales en situación de abandono, brindarles amor, cuidados médicos y encontrarles un hogar definitivo.</p>
+      <p><strong>Visión:</strong> Ser una organización modelo en protección animal y concienciación social, promoviendo la adopción y el respeto hacia todos los seres vivos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="seccion valores">
+  <h2>Valores</h2>
+  <ul class="lista-valores">
+    <li>✅ Amor y compasión por los animales</li>
+    <li>✅ Responsabilidad social</li>
+    <li>✅ Trabajo en equipo y voluntariado</li>
+    <li>✅ Transparencia y compromiso ético</li>
+  </ul>
+</section>
+
+
+    <section class="seccion equipo">
+  <h2>Nuestro Equipo</h2>
+  <div class="grid-equipo">
+    <article class="tarjeta-equipo">
+      <img src="assets/img/Gladys.jpeg" alt="Gladys Salmeron" class="img-perfil">
+      <h3>Gladys Salmeron</h3>
+      <h4>Encargada de Rescate</h4>
+      <p>Dedica su tiempo a buscar, asistir y trasladar animales en situación de abandono. Su compromiso ha salvado decenas de vidas.</p>
+    </article>
+    <article class="tarjeta-equipo">
+      <img src="assets/img/Alexa.jpeg" alt="Alexa Canales" class="img-perfil">
+      <h3>Alexa Canales</h3>
+      <h4>Coordinadora General</h4>
+      <p>Gestiona las campañas de adopción y coordina los voluntarios. Su liderazgo impulsa cada acción de Huellas de Amor.</p>
+    </article>
+    <article class="tarjeta-equipo">
+      <img src="assets/img/Edgar.jpeg" alt="Edgar Muñoz" class="img-perfil">
+      <h3>Edgar Muñoz</h3>
+      <h4>Encargado de Bienestar Animal</h4>
+      <p>Responsable de los cuidados diarios en el refugio. Supervisa la alimentación, salud y recuperación de los rescatados.</p>
+    </article>
+    <article class="tarjeta-equipo">
+      <img src="assets/img/Rony.jpeg" alt="Rony Paz" class="img-perfil">
+      <h3>Rony Paz</h3>
+      <h4>Relaciones Comunitarias</h4>
+      <p>Conecta a la organización con aliados, patrocinadores y adopciones. Promueve campañas de concientización en escuelas y barrios.</p>
+    </article>
+    <article class="tarjeta-equipo">
+      <img src="assets/img/Julio.jpeg" alt="Julio Zuniga" class="img-perfil">
+      <h3>Julio Zuniga</h3>
+      <h4>Gestión Web y Comunicaciones</h4>
+      <p>Administra el sitio de Huellas de Amor, difunde historias de rescate y actualiza la base de datos de adopciones y eventos.</p>
+    </article>
+    <p class="frase-equipo">Un equipo con corazón, entregado a quienes no tienen voz... 🐾</p>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 - Mi Proyecto Web. Todos los derechos reservados.</p>
+  </footer>
+    <script>
+    fetch('components/header.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('main-header').innerHTML = data;
+      });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/less"></script>
+  <script script src="assets/js/scripts.js"></script>
+</body>
+</html>
